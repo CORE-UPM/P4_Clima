@@ -1,0 +1,12 @@
+{
+    "name": "P4_Clima",
+    "author": "CORE-UPM",
+    "license": "GNU",
+    "version": "0.1.0",
+    "info": {
+        "githubURL": "CORE-UPM/P4_Clima",
+        "serverUrl": "https://autocorector.dit.upm.es/",
+        "courseId": "",
+        "assignmentId": ""
+    }
+}
