@@ -72,7 +72,7 @@ Para superar la entrega el alumno debe realizar las siguientes funciones:
 
 - `warmerAverageTemp(cities)`. Devuelve un array con el nombre de las ciudades cuya temperatura supera la temperatura media.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un array.
 
 ### 3. Filtrar por posición geográfica.
 

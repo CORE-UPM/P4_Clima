@@ -94,10 +94,10 @@ describe("Tests Práctica 4", function() {
         scored("funcion warmerAverageTemp", 1, async function(){ 
                this.msg_err = "La función no está correctamente implementada";
                let res1 = warmerAverageTemp(cities1);
-               res1.join(", ").should.be.equal('Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza');
+               res1.sort().join(", ").should.be.equal('Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Province of Huelva, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = warmerAverageTemp(JSON.parse(c2));
-               res2.join(", ").should.be.equal('Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Salamanca, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza');
+               res2.sort().join(", ").should.be.equal('Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Province of Huelva, Salamanca, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
         });
 
         scored("funcion maxNorth", 0.5, async function(){ 
