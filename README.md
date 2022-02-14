@@ -31,7 +31,14 @@ $ git clone https://github.com/CORE-UPM/P4_Clima.git
 
 ## Tareas
 
-Todas las tareas en esta práctica consistirán en escribir en el directorio raíz del proyecto, un módulo llamado `practica4.mjs`.
+Todas las tareas en esta práctica consistirán en escribir una serie de funciones en un un módulo llamado `practica4.mjs` que se ubicará en el directorio raíz del proyecto. Este módulo exportará las funciones definidas de la siguiente manera:
+
+```
+export const nombreFuncion = (parametros) => {
+    [...]
+    return valor;
+}
+```
 
 Para superar la entrega el alumno debe realizar las siguientes funciones:
 
@@ -88,13 +95,13 @@ Para superar la entrega el alumno debe realizar las siguientes funciones:
 
 ## Comprobar las soluciones
 
-Antes de pasar los tests se proporciona al alumno el fichero `main.mjs` con el que poder progar la práctica. 
+Para poder comprobar el resultado de las funciones desarrolladas antes de pasar el autocorector, se proporciona al alumno el fichero `main.mjs`:
 
 ```
 node main.mjs
 ```
 
-Este programa proporciona la salida esperada para el fichero `cities.json`:
+Este programa utiliza las funciones desarrolladas por el alumno en el fichero `practica4.mjs` y proporciona el resultado de ejecutarlas para los datos del fichero `cities.json`. A continuación puede verse un ejemplo de la salida de ejecutar dicho programa con las funciones implementadas correctamente:
 
 ```
 Numero de ciudades = 52
@@ -109,6 +116,8 @@ Ciudad más al sur = Las Palmas
 Centro de gravedad = { lon: -3.8182807692307694, lat: 39.93043653846154 }
 Más cerca de Centro de Gravedad = Toledo
 ```
+
+Es importante tener en cuenta que para que el programa `main.mjs` funcione es necesario que las funciones estén al menos definidas en `practica4.mjs`. Por lo tanto se recomienda crear el esqueleto del fichero solución con la definición de las funciones y a continuación proceder a su implementación paulatinamente. 
 
 ## Prueba de la práctica
 
