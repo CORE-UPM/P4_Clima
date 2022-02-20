@@ -16,7 +16,94 @@ Versión: 11 de Febrero de 2022
 
 ## Descripción de la práctica
 
-En esta práctica, partiremos de un fichero json con información metereológica de varias provincias españolas en un día cualquiera sobre el que se van a realizar distintas consultas. 
+En esta práctica, partiremos de un fichero json (`cities.json`) con información metereológica de varias provincias españolas en un día cualquiera sobre el que se van a realizar distintas consultas. La información ha sido extraída de https://openweathermap.org y un ejemplo de respuesta es el siguiente:
+
+```
+[
+    {
+        "coord": {
+            "lon": -8.396,
+            "lat": 43.3713
+        },
+        "weather": [
+            {
+                "id": 803,
+                "main": "Clouds",
+                "description": "muy nuboso",
+                "icon": "04d"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 13.45,
+            "feels_like": 13.15,
+            "temp_min": 12.66,
+            "temp_max": 14.71,
+            "pressure": 1024,
+            "humidity": 88
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 0.45,
+            "deg": 290,
+            "gust": 3.13
+        },
+        "clouds": {
+            "all": 75
+        },
+        "dt": 1641828987,
+        "sys": {
+            "type": 2,
+            "id": 2002597,
+            "country": "ES",
+            "sunrise": 1641801906,
+            "sunset": 1641834995
+        },
+        "timezone": 3600,
+        "id": 3119841,
+        "name": "A Coruna",
+        "cod": 200
+    },
+	{...},
+	{...},
+]
+```
+Los campos de interés para la práctica son:
+- `coord`:
+  - `coord.lon`: City geo location, longitude
+  - `coord.lat`: City geo location, latitude
+- `weather`: Información del tiempo
+	- `weather.id` Weather condition id
+	- `weather.main` Group of weather parameters (Rain, Snow, Extreme etc.)
+	- `weather.description` Weather condition within the group
+	- `weather.icon` Weather icon id.
+- `base`: Internal parameter of the API
+- `visibility`: Internal parameter of the API
+- `main`:
+  - `main.temp:` Temperature. Unit: Celsius.
+  - `main.feels_like:` Temperature. This temperature parameter accounts for the human perception of weather. Unit: Celsius.
+  - `main.temp_min:` Minimum temperature observed. Unit: Celsius.
+  - `main.temp_max:` Maximum temperature observed. Unit: Celsius.
+  - `main.pressure:` Atmospheric pressure. Unit: hPa.
+  - `main.humidity:` Humidity, %
+- `wind`:
+  - `wind.speed:` Wind speed. Unit: meter/sec.
+  - `wind.deg:` Wind direction, degrees.
+  - `wind.gust:` Wind gust. Unit: meter/sec.
+- `clouds`:
+  - `clouds.all:` Cloudiness, %
+- `dt`: Time of data calculation. UTC
+- `sys`:
+  - `sys.type`: Internal parameter of the API
+  - `sys.id`: Internal parameter of the API
+  - `sys.message`: Internal parameter of the API
+  - `sys.country`: Country code (GB, JP etc.)
+  - `sys.sunrise`: Sunrise time. UTC
+  - `sys.sunset`: Sunset time. UTC
+- `timezone`: Shift in seconds from UTC
+- `id`: City ID
+- `name`: City name
+- `cod`: Internal parameter of the API
 
 
 ## Descargar el código del proyecto
