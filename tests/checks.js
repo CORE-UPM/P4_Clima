@@ -84,11 +84,11 @@ describe("Tests Práctica 4", function() {
 
         scored("funcion averageTemp", 1, async function(){ 
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = averageTemp(cities1);
-               res1.should.be.equal(13.67923076923077);
+               let res1 = (averageTemp(cities1)).toFixed(2);
+               res1.should.be.equal((13.67923076923077).toFixed(2));
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = averageTemp(JSON.parse(c2));
-               res2.should.be.equal(13.895769230769229);
+               let res2 = (averageTemp(JSON.parse(c2))).toFixed(2);
+               res2.should.be.equal((13.895769230769229).toFixed(2));
         });
 
         scored("funcion warmerAverageTemp", 1, async function(){ 
@@ -120,11 +120,11 @@ describe("Tests Práctica 4", function() {
 
         scored("funcion gravityCenter", 2, async function(){ 
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = gravityCenter(cities1);
-               res1.lon.should.be.equal(-3.8182807692307694);
+               let res1 = (gravityCenter(cities1).lon).toFixed(2);
+               res1.should.be.equal((-3.8182807692307694).toFixed(2));
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = gravityCenter(JSON.parse(c2));
-               res2.lat.should.be.equal(38.98812884615384);
+               let res2 = (gravityCenter(JSON.parse(c2)).lat).toFixed(2);
+               res2.should.be.equal((38.98812884615384).toFixed(2));
         });
 
         scored("funcion closestGC", 2, async function(){ 
