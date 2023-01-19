@@ -1,7 +1,7 @@
 /* eslint-disable no-invalid-this*/
 /* eslint-disable no-undef*/
 // IMPORTS
-const {feedback,path_assignment,err, warn_errors, scored, log, checkFileExists} = require("./testutils");
+const {feedback,path_assignment,err, warn_errors, scored, log, checkFileExists} = require("../utils/testutils");
 
 const {
     load,
@@ -14,7 +14,7 @@ const {
     maxNorth,
     maxSouth,
     gravityCenter,
-    closestGC } = require ('./../practica4.js');
+    closestGC } = require ('../../practica4.js');
 
 const citiesFilename = './cities.json';
 var cities1;

@@ -3,10 +3,15 @@
     "author": "CORE-UPM",
     "license": "GNU",
     "version": "0.1.0",
+    "capturesFolder": "miscapturas",
+    "capturesNumber": 2,
     "info": {
         "githubURL": "CORE-UPM/P4_Clima",
-        "serverUrl": "https://autocorector.dit.upm.es/",
+        "serverUrl": "https://aat.dit.upm.es/",
         "courseId": "395",
-        "assignmentId": "49903"
+        "assignmentId": "12968"
+    },
+    "dependencies": {
+        "autocorector": "^3.1.6"
     }
 }
