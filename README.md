@@ -219,6 +219,7 @@ Capturas a entregar con esta práctica:
 <kbd>
 <img src="https://user-images.githubusercontent.com/52309/211211260-38d440ff-df4e-4fd7-854b-cdc850d79e7a.png" alt="drawing" width="500"/>
 </kbd>
+
 - Captura 2: Captura de pantalla del código del fichero practica4.js (o que se vea al menos una parte de él).
 
 ## Instrucciones para la Entrega y Evaluación.
