@@ -133,48 +133,47 @@ Para superar la entrega el alumno debe realizar las siguientes funciones:
 
 ### 2. Obtener información sobre temperaturas.
 
-- `maxTemp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura más alta.
+- `max_temp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura más alta.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un número.
 
-- `minTemp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura más baja.
+- `min_temp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura más baja.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un número.
 
-- `maxTempMin(cities)`. Obtiene la temperatura de todas las ciudades y devuelve la temperatura de la temperatura mínima más alta.
+- `max_temp_min(cities)`. Obtiene la temperatura de todas las ciudades y devuelve la temperatura de la temperatura mínima más alta.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un número.
 
-- `minTempMax(cities)`. Obtiene la temperatura de todas las ciudades y devuelve la temperatura de la temperatura máxima más baja.
+- `min_temp_max(cities)`. Obtiene la temperatura de todas las ciudades y devuelve la temperatura de la temperatura máxima más baja.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un número.
 
-- `averageTemp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura media.
+- `average_temp(cities)`. Obtiene la temperatura (temp) de todas las ciudades y devuelve la temperatura media.
   - Parámetro `cities` con el array de ciudades.
-  - Devuelve un numero.
+  - Devuelve un número.
 
-- `warmerAverageTemp(cities)`. Devuelve un array con el nombre de las ciudades cuya temperatura supera la temperatura media.
+- `warmer_average_temp(cities)`. Devuelve un array con el nombre de las ciudades cuya temperatura supera la temperatura media.
   - Parámetro `cities` con el array de ciudades.
   - Devuelve un array.
 
 ### 3. Filtrar por posición geográfica.
 
-- `maxNorth(cities)`. Devuelve el nombre de la ciudad situada más al norte.
+- `max_north(cities)`. Devuelve el nombre de la ciudad situada más al norte.
   - Parámetro `cities` con el array de ciudades.
   - Devuelve un string.
 
-- `maxSouth(cities)`. Devuelve el nombre de la ciudad situada más al sur.
+- `max_south(cities)`. Devuelve el nombre de la ciudad situada más al sur.
   - Parámetro `cities` con el array de ciudades.
   - Devuelve un string.
 
-- `gravityCenter(cities)`. Calcula el centro de gravedad de todas las ciudades usando como posición la latitud y longitud. El centro de gravedad se calcula como la media aritmética de las latitudes y longitudes.
+- `gravity_center(cities)`. Calcula el centro de gravedad de todas las ciudades usando como posición la latitud y longitud. El centro de gravedad se calcula como la media aritmética de las latitudes y longitudes.
   - Parámetro `cities` con el array de ciudades.
   - Devuelve un objeto con dos propiedades, lat y lon, que contienen las coordenadas del centro de gravedad.
   
-- `closestGC(cities)`. Devuelve el nombre de la ciudad más cercana al centro de gravedad. [Pista: Calcular las distancias entre cada una de las ciudades y el centro de gravedad]
+- `closest_GC(cities)`. Devuelve el nombre de la ciudad más cercana al centro de gravedad. [Pista: Calcular las distancias entre cada una de las ciudades y el centro de gravedad]
   - Parámetro `cities` con el array de ciudades.
   - Devuelve un string.
-
 
 ## Comprobar las soluciones
 
@@ -202,6 +201,12 @@ Más cerca de Centro de Gravedad = Toledo
 
 Es importante tener en cuenta que para que el programa `main.js` funcione es necesario que las funciones estén al menos definidas en `practica4.js`. Por lo tanto se recomienda crear el esqueleto del fichero solución con la definición de las funciones y a continuación proceder a su implementación paulatinamente. 
 
+## Consideraciones adicionales y recomendaciones
+
+IMPORTANTE:  Todas las funciones deben tener el nombre que se ha pedido en el enunciado, si a la función de gravity_center por ejemplo la llamamos "gravity_enter" el autocorector no la encontrará y no nos dará los puntos. Ponga exactamente lo que se pide respetando mayúsculas y acentos.
+
+De cara al examen piense en qué ha aprendido y qué cosas podría modificar y controlar de la práctica. Por ejemplo, crear una nueva función con un segundo parámetro que devuelva las ciudades que tienen una temperatura máxima más alta que el parámetro, una función que devuelva la ciudad con la mayor diferencia entre
+la temperatura(main.temp) y la temperatura percibida(main.feels_like)...
 
 
 ## Pruebas con el autocorector
@@ -231,16 +236,17 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
-- **10%:** Funcíon `load`
-- **5%:** Funcíon `maxTemp`
-- **5%:** Funcíon `minTemp`
-- **5%:** Funcíon `maxTempMin`
-- **5%:** Funcíon `minTempMax`
-- **10%:** Funcíon `averageTemp`
-- **10%:** Funcíon `warmerAverageTemp`
-- **5%:** Funcíon `maxNorth`
-- **5%:** Funcíon `maxSouth`
-- **20%:** Funcíon `gravityCenter`
-- **20%:** Funcíon `closestGC`
+- **10%:** Función `load`
+- **5%:** Función `max_temp`
+- **5%:** Función `min_temp`
+- **5%:** Función `max_temp_min`
+- **5%:** Función `min_temp_max`
+- **10%:** Función `average_temp`
+- **10%:** Función `warmer_average_temp`
+- **5%:** Función `max_north`
+- **5%:** Función `max_south`
+- **20%:** Función `gravity_center`
+- **20%:** Función `closest_GC`
+
 
 Si pasa todos los tests se dará la máxima puntuación.

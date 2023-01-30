@@ -5,16 +5,16 @@ const {feedback,path_assignment,err, warn_errors, scored, log, checkFileExists} 
 
 const {
     load,
-    maxTemp,
-    minTemp,
-    maxTempMin,
-    minTempMax,
-    averageTemp,
-    warmerAverageTemp,
-    maxNorth,
-    maxSouth,
-    gravityCenter,
-    closestGC } = require ('../../practica4.js');
+    max_temp,
+    min_temp,
+    max_temp_min,
+    min_temp_max,
+    average_temp,
+    warmer_average_temp,
+    max_north,
+    max_south,
+    gravity_center,
+    closest_GC } = require ('./../../practica4.js');
 
 const citiesFilename = './cities.json';
 var cities1;
@@ -30,109 +30,109 @@ describe("Tests Práctica 4", function() {
     // Es un sanity check antes de los tests de verdad.
     describe("Prechecks", function () {
         scored("Comprobando que existe el directorio de la entrega...",
-           -1, async function () {
-               this.msg_ok = `Encontrado el directorio '${path_assignment}'`;
-               this.msg_err = `No se encontró el directorio '${path_assignment}'`;
-               const fileexists = await checkFileExists(path_assignment);
+            -1, async function () {
+                this.msg_ok = `Encontrado el directorio '${path_assignment}'`;
+                this.msg_err = `No se encontró el directorio '${path_assignment}'`;
+                const fileexists = await checkFileExists(path_assignment);
 
-               fileexists.should.be.equal(true);
-           });
+                fileexists.should.be.equal(true);
+            });
     });
 
     describe("Funcionales", function(){
-        scored("funcion load", 1, async function(){ 
-               this.msg_err = "La función no está correctamente implementada";
-               cities1 = await load(citiesFilename);
-               cities1.length.should.be.equal(52);
+        scored("funcion load", 1, async function(){
+            this.msg_err = "La función no está correctamente implementada";
+            cities1 = await load(citiesFilename);
+            cities1.length.should.be.equal(52);
         });
 
-        scored("funcion maxTemp", 0.5, async function(){ 
+        scored("funcion max_temp", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = maxTemp(cities1);
+               let res1 = max_temp(cities1);
                res1.should.be.equal(21.84);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = maxTemp(JSON.parse(c2));
+               let res2 = max_temp(JSON.parse(c2));
                res2.should.be.equal(28.01);
         });
 
-        scored("funcion minTemp", 0.5, async function(){ 
+        scored("funcion min_temp", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = minTemp(cities1);
+               let res1 = min_temp(cities1);
                res1.should.be.equal(8.01);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = minTemp(JSON.parse(c2));
+               let res2 = min_temp(JSON.parse(c2));
                res2.should.be.equal(8.54);
         });
 
-        scored("funcion maxTempMin", 0.5, async function(){ 
+        scored("funcion max_temp_min", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = maxTempMin(cities1);
+               let res1 = max_temp_min(cities1);
                res1.should.be.equal(20.4);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = maxTempMin(JSON.parse(c2));
+               let res2 = max_temp_min(JSON.parse(c2));
                res2.should.be.equal(19.27);
         });
 
-        scored("funcion minTempMax", 0.5, async function(){ 
+        scored("funcion min_temp_ax", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = minTempMax(cities1);
+               let res1 = min_temp_max(cities1);
                res1.should.be.equal(9.02);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = minTempMax(JSON.parse(c2));
+               let res2 = min_temp_max(JSON.parse(c2));
                res2.should.be.equal(1);
         });
 
-        scored("funcion averageTemp", 1, async function(){ 
+        scored("funcion average_temp", 1, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = (averageTemp(cities1)).toFixed(2);
+               let res1 = (average_temp(cities1)).toFixed(2);
                res1.should.be.equal((13.67923076923077).toFixed(2));
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = (averageTemp(JSON.parse(c2))).toFixed(2);
+               let res2 = (average_temp(JSON.parse(c2))).toFixed(2);
                res2.should.be.equal((13.895769230769229).toFixed(2));
         });
 
-        scored("funcion warmerAverageTemp", 1, async function(){ 
+        scored("funcion warmer_average_temp", 1, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = warmerAverageTemp(cities1);
+               let res1 = warmer_average_temp(cities1);
                res1.sort().join(", ").should.be.equal('Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Province of Huelva, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = warmerAverageTemp(JSON.parse(c2));
+               let res2 = warmer_average_temp(JSON.parse(c2));
                res2.sort().join(", ").should.be.equal('Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Province of Huelva, Salamanca, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
         });
 
-        scored("funcion maxNorth", 0.5, async function(){ 
+        scored("funcion max_north", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = maxNorth(cities1);
+               let res1 = max_north(cities1);
                res1.should.be.equal('A Coruna');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = maxNorth(JSON.parse(c2));
+               let res2 = max_north(JSON.parse(c2));
                res2.should.be.equal('Principality of Asturias');
         });
 
-        scored("funcion maxSouth", 0.5, async function(){ 
+        scored("funcion max_south", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = maxSouth(cities1);
+               let res1 = max_south(cities1);
                res1.should.be.equal('Las Palmas');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = maxSouth(JSON.parse(c2));
+               let res2 = max_south(JSON.parse(c2));
                res2.should.be.equal('A Coruna');
         });
 
-        scored("funcion gravityCenter", 2, async function(){ 
+        scored("funcion gravity_center", 2, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = (gravityCenter(cities1).lon).toFixed(2);
+               let res1 = (gravity_center(cities1).lon).toFixed(2);
                res1.should.be.equal((-3.8182807692307694).toFixed(2));
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = (gravityCenter(JSON.parse(c2)).lat).toFixed(2);
+               let res2 = (gravity_center(JSON.parse(c2)).lat).toFixed(2);
                res2.should.be.equal((38.98812884615384).toFixed(2));
         });
 
-        scored("funcion closestGC", 2, async function(){ 
+        scored("funcion closest_GC", 2, async function(){
                this.msg_err = "La función no está correctamente implementada";
-               let res1 = closestGC(cities1);
+               let res1 = closest_GC(cities1);
                res1.should.be.equal('Toledo');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
-               let res2 = closestGC(JSON.parse(c2));
+               let res2 = closest_GC(JSON.parse(c2));
                res2.should.be.equal('Ciudad Real');
         });
     });
