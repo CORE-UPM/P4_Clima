@@ -11,7 +11,13 @@ Versión: 23 de Enero de 2024
 
 - Crear un módulo de Node.js y exportar funciones.
 - Leer ficheros de forma asíncrona.
-- Practicar con arrays y objetos y métodos para procesar arrays (`map`, `reduce`, `filter`, `forEach`, etc.) 
+- Practicar con arrays y objetos y métodos para procesar arrays (`map`, `reduce`, `filter`, `forEach`, etc.)
+
+## Dependencias
+
+Para realizar la práctica el alumno deberá tener instalado en su ordenador:
+- Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
+- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 20.
 
 
 ## Descripción de la práctica
