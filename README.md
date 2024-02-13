@@ -193,13 +193,13 @@ Este programa utiliza las funciones desarrolladas por el alumno en el fichero `p
 
 ```
 Numero de ciudades = 52
-Temperatura Maxima = 21.84
-Temperatura Mínima = 8.01
-Temperatura Media = 13.67923076923077
-Más calientes que la temperatura Media = Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Lleida, Madrid, Málaga, Melilla, Murcia, Ourense, Pontevedra, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza
-Temperatura Max Mímima = 9.02
-Temperatura Min Máxima = 20.4
-Ciudad más al norte = A Coruña
+Temperatura Maxima = 22.84
+Temperatura Mínima = 7.81
+Temperatura Media = 13.713846153846154
+Más calientes que la temperatura Media = A Coruna, Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza
+Temperatura Max Mímima = 9.04
+Temperatura Min Máxima = 20.3
+Ciudad más al norte = A Coruna
 Ciudad más al sur = Las Palmas
 Centro de gravedad = { lon: -3.8182807692307694, lat: 39.93043653846154 }
 Más cerca de Centro de Gravedad = Toledo
