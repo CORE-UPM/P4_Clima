@@ -5,7 +5,7 @@
 
 # Práctica 4 - Clima
 
-Versión: 23 de Enero de 2024
+Versión: 13 de Febrero de 2024
 
 ## Objetivos
 
@@ -41,7 +41,7 @@ En esta práctica, partiremos de un fichero json (`cities.json`) con informació
         ],
         "base": "stations",
         "main": {
-            "temp": 13.45,
+            "temp": 14.45,
             "feels_like": 13.15,
             "temp_min": 12.66,
             "temp_max": 14.71,

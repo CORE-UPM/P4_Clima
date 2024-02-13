@@ -14,7 +14,7 @@
         ],
         "base": "stations",
         "main": {
-            "temp": 13.45,
+            "temp": 14.45,
             "feels_like": 13.15,
             "temp_min": 12.66,
             "temp_max": 14.71,
@@ -144,9 +144,9 @@
         ],
         "base": "stations",
         "main": {
-            "temp": 21.84,
+            "temp": 22.84,
             "feels_like": 21.23,
-            "temp_min": 20.4,
+            "temp_min": 20.3,
             "temp_max": 23.38,
             "pressure": 1014,
             "humidity": 44
@@ -594,7 +594,7 @@
             "temp": 8.54,
             "feels_like": 7.47,
             "temp_min": 8.03,
-            "temp_max": 9.02,
+            "temp_max": 9.04,
             "pressure": 1025,
             "humidity": 97,
             "sea_level": 1025,
@@ -1759,7 +1759,7 @@
         ],
         "base": "stations",
         "main": {
-            "temp": 8.01,
+            "temp": 7.81,
             "feels_like": 5.58,
             "temp_min": 7.56,
             "temp_max": 13.88,
