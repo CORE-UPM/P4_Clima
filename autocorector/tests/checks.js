@@ -73,7 +73,7 @@ describe("Tests Práctica 4", function() {
                res2.should.be.equal(19.27);
         });
 
-        scored("funcion min_temp_ax", 0.5, async function(){
+        scored("funcion min_temp_max", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = min_temp_max(cities1);
                res1.should.be.equal(9.04);
