@@ -12,6 +12,6 @@
         "assignmentId": "8547"
     },
     "dependencies": {
-        "autocorector": "^3.2.2"
+        "autocorector": "^3.5.0"
     }
 }
