@@ -5,7 +5,7 @@
 
 # Práctica 4 - Clima
 
-Versión: 13 de Febrero de 2024
+Versión: 25 de Febrero de 2025
 
 ## Objetivos
 
@@ -17,7 +17,7 @@ Versión: 13 de Febrero de 2024
 
 Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
-- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 20.
+- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 20 o 22.
 
 
 ## Descripción de la práctica
