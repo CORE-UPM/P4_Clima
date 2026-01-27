@@ -9,9 +9,9 @@
         "githubURL": "CORE-UPM/P4_Clima",
         "serverUrl": "https://aat.dit.upm.es/",
         "courseId": "395",
-        "assignmentId": "8547"
+        "assignmentId": "41285"
     },
     "dependencies": {
-        "autocorector": "^3.2.2"
+        "autocorector": "^4.0.1"
     }
 }
