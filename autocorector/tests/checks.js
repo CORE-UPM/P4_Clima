@@ -49,7 +49,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion max_temp", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = max_temp(cities1);
-               res1.should.be.equal(22.84);
+               res1.should.be.equal(22.85);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = max_temp(JSON.parse(c2));
                res2.should.be.equal(28.01);
@@ -58,7 +58,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion min_temp", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = min_temp(cities1);
-               res1.should.be.equal(7.81);
+               res1.should.be.equal(7.85);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = min_temp(JSON.parse(c2));
                res2.should.be.equal(8.54);
@@ -67,7 +67,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion max_temp_min", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = max_temp_min(cities1);
-               res1.should.be.equal(20.3);
+               res1.should.be.equal(20.4);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = max_temp_min(JSON.parse(c2));
                res2.should.be.equal(19.27);
@@ -76,7 +76,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion min_temp_max", 0.5, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = min_temp_max(cities1);
-               res1.should.be.equal(9.04);
+               res1.should.be.equal(9.14);
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = min_temp_max(JSON.parse(c2));
                res2.should.be.equal(1);
@@ -85,7 +85,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion average_temp", 1, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = (average_temp(cities1)).toFixed(2);
-               res1.should.be.equal((13.713846153846154).toFixed(2));
+               res1.should.be.equal((13.618653846153848).toFixed(2));
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = (average_temp(JSON.parse(c2))).toFixed(2);
                res2.should.be.equal((13.895769230769229).toFixed(2));
@@ -94,7 +94,7 @@ describe("Tests Práctica 4", function() {
         scored("funcion warmer_average_temp", 1, async function(){
                this.msg_err = "La función no está correctamente implementada";
                let res1 = warmer_average_temp(cities1);
-               res1.sort().join(", ").should.be.equal('A Coruna, Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Province of Huelva, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
+               res1.sort().join(", ").should.be.equal('A Coruna, Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Province of Huelva, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');
                let c2 = Buffer.from(cities2, 'base64').toString('ascii');
                let res2 = warmer_average_temp(JSON.parse(c2));
                res2.sort().join(", ").should.be.equal('Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Province of Huelva, Salamanca, Santa Cruz de Tenerife, Seville, Toledo, Valencia, Zamora, Zaragoza');

@@ -5,7 +5,7 @@
 
 # Práctica 4 - Clima
 
-Versión: 25 de Febrero de 2025
+Versión: 28 de Enero de 2026
 
 ## Objetivos
 
@@ -17,7 +17,7 @@ Versión: 25 de Febrero de 2025
 
 Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
-- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 20 o 22.
+- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 22.
 
 
 ## Descripción de la práctica
@@ -193,12 +193,12 @@ Este programa utiliza las funciones desarrolladas por el alumno en el fichero `p
 
 ```
 Numero de ciudades = 52
-Temperatura Maxima = 22.84
-Temperatura Mínima = 7.81
-Temperatura Media = 13.713846153846154
-Más calientes que la temperatura Media = A Coruna, Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Lleida, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza
-Temperatura Max Mímima = 9.04
-Temperatura Min Máxima = 20.3
+Temperatura Maxima = 22.85
+Temperatura Mínima = 7.85
+Temperatura Media = 13.618653846153848
+Más calientes que la temperatura Media = A Coruna, Alicante, Almeria, Badajoz, Caceres, Cadiz, Castellon, Ceuta, Ciudad Real, Province of Huelva, Huesca, Las Palmas, Madrid, Malaga, Melilla, Murcia, Ourense, Pontevedra, Seville, Santa Cruz de Tenerife, Toledo, Valencia, Zamora, Zaragoza
+Temperatura Max Mímima = 9.14
+Temperatura Min Máxima = 20.4
 Ciudad más al norte = A Coruna
 Ciudad más al sur = Las Palmas
 Centro de gravedad = { lon: -3.8182807692307694, lat: 39.93043653846154 }
